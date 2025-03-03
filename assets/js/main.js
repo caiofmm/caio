@@ -167,9 +167,6 @@
 
   });
 
-  /**
-   * Init swiper sliders
-   */
   function initSwiper() {
     document.querySelectorAll(".init-swiper").forEach(function(swiperElement) {
       let config = JSON.parse(
@@ -186,9 +183,7 @@
 
   window.addEventListener("load", initSwiper);
 
-  /**
-   * Correct scrolling position upon page load for URLs containing hash links.
-   */
+  
   window.addEventListener('load', function(e) {
     if (window.location.hash) {
       if (document.querySelector(window.location.hash)) {
@@ -204,9 +199,7 @@
     }
   });
 
-  /**
-   * Navmenu Scrollspy
-   */
+  
   let navmenulinks = document.querySelectorAll('.navmenu a');
 
   function navmenuScrollspy() {
